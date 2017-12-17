@@ -1,0 +1,19 @@
+# create a docker-compose.yml file
+version: “2”
+ services:
+  web:
+   image: sccofield/usermanager
+   environment:
+    - PORT=3000
+    -   DB_URL=mongodb://usermanager:usermanager@ds141796.mlab.com:41796/usermanager
+   build: .
+   volumes:
+     — ./:/app
+   ports:
+   — “3000:3000”
+   links:
+    — mongo
+   mongo:
+    image: mongo
+    ports:
+      — “27017:27017”

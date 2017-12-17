@@ -8,6 +8,12 @@ The API is used to manage users in a MongoDB database.
 ### Development
 This application was developed using [ExpressJS](http://expressjs.com/). MongoDB was used for persisting data with [Mongoose](https://mongoosejs.com/) as [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping).
 
+### Run Application with docket.
+ - Install `docker` and `docker-compose` on your server.
+ - Clone the repository with `git clone https://github.com/sccofield/UserManager.git`
+ - In the cloned project directory, run `docker-compose up`
+ - That's it. You can start making api calls as specified
+
 ### Installation
 * Start up your terminal (or Command Prompt on Windows OS).
 * Ensure that you've `node` installed on your PC.
